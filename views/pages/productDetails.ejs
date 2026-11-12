@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+  <%- include('../partials/navbar') %>
+
+    <div class="product-details-container">
+
+      <div class="product-image">
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+      </div>
+
+      <div class="product-info">
+
+        <h1>
+          <%= product.name %>
+        </h1>
+
+        <p class="brand">Brand: <%= product.brand %>
+        </p>
+
+        <p class="category">Category: <%= product.category %>
+        </p>
+
+        <h2 class="price">₹<%= product.price %>
+        </h2>
+
+        <p class="description">
+          <%= product.description %>
+        </p>
+
+        <button class="buy-button">Add to Cart</button>
+
+      </div>
+
+    </div>
+
+    <%- include('../partials/footer') %>
